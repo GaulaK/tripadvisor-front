@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 1135px;
+  margin: 0 auto;
+  border: 1px solid orange;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Trip Sans Reg", sans-serif;
+}
+
+h1 {
+  font-size: 54px;
+  font-family: "Trip Sans Med", sans-serif font;
+  font-weight: bold;
+  color: #ff5d5d;
+  margin: 20px 0 10px 0;
+}
+
+h1 .country-name {
+  color: black;
+}
+/* -------------------------- */
+/* HEADER ------------------- */
+/* -------------------------- */
+
+header {
+  height: 60px;
+  /* border: 1px solid red; */
+}
+
+/* TODO: CENTER IMAGE Y-AXIS */
+header img {
+  height: 50px;
+  /* border: 1px solid blue; */
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* height: 100%; */
+  /* width: 100px; */
+}
+header nav span {
+  margin-left: 5px;
+}
+
+header .container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+header button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+header a {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+header a:hover {
+  background-color: #ededed;
+}
+
+header button {
+  background-color: black;
+  color: white;
+  padding: 13px 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+header button:hover {
+  background-color: #333333;
+}
+
+/* -------------------------- */
+/* BODY --------------------- */
+/* -------------------------- */
+
+.baseline {
+  font-size: 14px;
+}
+
+/* MENU */
+.menu {
+  /* height: 100px; */
+  display: flex;
+  margin: 20px 0;
+  gap: 10px;
+}
+.menu div {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: calc((100% - 5 * 10px) / 6);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.menu div:hover {
+  color: white;
+  background-color: black;
+}
+
+/* IMAGE GALLERY */
+
+.images-gallery {
+  /* border: 1px solid red; */
+  height: 430px;
+  display: flex;
+}
+
+.images-gallery .col-left {
+  height: 100%;
+  flex: 1;
+  margin-right: 2px;
+}
+
+.images-gallery .col-right {
+  height: 100%;
+  width: 480px;
+}
+
+.images-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.images-gallery .col-right div {
+  width: 100%;
+  height: 50%;
+  height: calc(50% -1px);
+}
+
+.images-gallery .col-right div:first-child {
+  margin-bottom: 2px;
+}
