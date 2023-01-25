@@ -180,6 +180,7 @@ header button:hover {
   /* border: solid 3px red; */
   margin-top: 20px;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .activities .description {
