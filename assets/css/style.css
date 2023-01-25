@@ -26,6 +26,24 @@ h1 {
 h1 .country-name {
   color: black;
 }
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
 /* -------------------------- */
 /* HEADER ------------------- */
 /* -------------------------- */
@@ -147,4 +165,65 @@ header button:hover {
 
 .images-gallery .col-right div:first-child {
   margin-bottom: 2px;
+}
+
+/* CAROUSEL PART */
+/* ------------- */
+.activities {
+  height: 295px;
+  /* border: solid 3px red; */
+  margin-top: 20px;
+  display: flex;
+}
+
+.activities .description {
+  /* border: solid 1px blue; */
+  flex: 1;
+}
+
+.activities .description p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 20px;
+  padding-right: 10px;
+}
+
+.activities .carousel {
+  /* border: solid 1px green; */
+
+  flex: 3;
+  flex-wrap: nowrap;
+  display: flex;
+  overflow: hidden;
+  list-style: none;
+  overflow-x: scroll;
+}
+/* ELT OF CAROUSEL */
+/* ------------- */
+.activities .carousel .element-carousel {
+  /* border: solid 1px yellow; */
+  /* background-color: bisque; */
+
+  height: 100%;
+  width: calc((100% / 3) - (10px));
+  flex-shrink: 0;
+}
+.activities .carousel .element-carousel:not(:last-child) {
+  margin-right: 15px;
+}
+
+.activities .carousel .element-carousel img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.activities .carousel .element-carousel p {
+  margin-top: 5px;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.space {
+  height: 300px;
 }
