@@ -190,7 +190,57 @@ header button:hover {
   font-size: 12px;
   display: flex;
   justify-content: space-between;
+  font-weight: lighter;
 }
+/* DETAILS  PART */
+
+.details {
+  /* border: solid 1px black; */
+  height: 400px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.details .col-left {
+  /* background-color: blue; */
+  height: 100%;
+  flex: 3;
+  padding-right: 50px;
+}
+.details .col-right {
+  /* background-color: green; */
+  height: 100%;
+  flex: 2;
+}
+
+.details .col-left p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding-right: 60px;
+  margin-top: 30px;
+}
+
+.details .col-right div:first-child {
+  background-color: #ff5d5d;
+  width: 100%;
+  height: 60%;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.details .col-right div:last-child {
+  height: 40%;
+  width: 100%;
+}
+
+.details .col-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
+}
+/* ------------- */
+
 /* CAROUSEL PART */
 /* ------------- */
 
@@ -224,6 +274,7 @@ header button:hover {
   overflow: hidden;
   list-style: none;
   overflow-x: scroll;
+  gap: 15px;
 }
 /* ELT OF CAROUSEL */
 /* ------------- */
@@ -236,12 +287,9 @@ header button:hover {
   /* background-color: bisque; */
 
   height: 100%;
-  width: calc((100% / 3) - (10px));
+  width: calc((100% - 2 * 15px) / 3);
   flex-shrink: 0;
   position: relative;
-}
-.activities .carousel .element-carousel:not(:last-child) {
-  margin-right: 15px;
 }
 
 .activities .carousel .element-carousel img {
