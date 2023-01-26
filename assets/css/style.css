@@ -59,6 +59,14 @@ header {
   z-index: 1;
 }
 
+/* header::after {
+  content: "";
+  border-bottom: #34e0a1 solid 1px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+
 /* TODO: CENTER IMAGE Y-AXIS */
 header img {
   height: 50px;
@@ -173,6 +181,16 @@ header button:hover {
   margin-bottom: 2px;
 }
 
+/* BREADCRUM */
+/* --------- */
+
+.breadcrum {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
 /* CAROUSEL PART */
 /* ------------- */
 
