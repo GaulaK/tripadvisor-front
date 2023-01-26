@@ -67,7 +67,6 @@ header {
   width: 100%;
 } */
 
-/* TODO: CENTER IMAGE Y-AXIS */
 header img {
   padding-top: 5px;
   height: 50px;
@@ -298,7 +297,8 @@ header button:hover {
 
 .activities .carousel .element-carousel img {
   width: 100%;
-  height: 200px;
+  /* height: 60%; */
+  aspect-ratio: 27/20;
   object-fit: cover;
 }
 
@@ -470,5 +470,25 @@ footer .container a:hover {
     height: 100%;
     margin-right: 2px;
     width: 400px;
+  }
+  .details .visibleXL {
+    display: none;
+  }
+
+  .activities {
+    flex-direction: column;
+    /* border: red 1px solid; */
+    height: auto;
+  }
+
+  .activities .carousel {
+    width: 100%;
+    /* border: blue 1px solid; */
+  }
+
+  .activities .description {
+    width: 100%;
+    /* border: #f2b203 1px solid; */
+    margin-bottom: 3%;
   }
 }
