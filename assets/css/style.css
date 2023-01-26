@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .container {
-  width: 1135px;
+  max-width: 1135px;
   margin: 0 auto;
   /* border: 1px solid orange; */
 }
@@ -21,7 +21,7 @@ h1 {
   font-family: "Trip Sans Med", sans-serif font;
   font-weight: bold;
   color: #ff5d5d;
-  margin: 20px 0 10px 0;
+  margin: 100px 0 10px 0;
 }
 
 h1 .country-name {
@@ -69,6 +69,7 @@ header {
 
 /* TODO: CENTER IMAGE Y-AXIS */
 header img {
+  padding-top: 5px;
   height: 50px;
   /* border: 1px solid blue; */
 }
@@ -156,13 +157,13 @@ header button:hover {
 
 .images-gallery .col-left {
   height: 100%;
-  flex: 1;
   margin-right: 2px;
 }
 
 .images-gallery .col-right {
   height: 100%;
   width: 480px;
+  flex: 1;
 }
 
 .images-gallery img {
@@ -275,6 +276,9 @@ header button:hover {
   list-style: none;
   overflow-x: scroll;
   gap: 15px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 /* ELT OF CAROUSEL */
 /* ------------- */
@@ -405,4 +409,66 @@ footer .container a {
 
 footer .container a:hover {
   color: #333333;
+}
+
+/* ------------------------------------- */
+/* ---------  MEDIA  ------------------- */
+/* ------------------------------------- */
+
+.visibleS {
+  display: none;
+}
+
+@media (max-width: 1184px) {
+  h1 {
+    font-size: 50px;
+  }
+  .images-gallery .col-left {
+    height: 100%;
+    margin-right: 2px;
+    width: 720px;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 45px;
+  }
+  .images-gallery .col-left {
+    height: 100%;
+    margin-right: 2px;
+    width: 540px;
+  }
+
+  .menu div {
+    width: calc((100% - 2 * 10px) / 3);
+    /* border-color: #f2b203; */
+  }
+  .menu {
+    /* border: 1px solid #ff5d5d; */
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  header .visibleXL {
+    display: none;
+  }
+  .visibleS {
+    display: inline;
+  }
+  header button {
+    background-color: black;
+    color: white;
+    padding: 13px 13px;
+    border-radius: 50%;
+    /* border: none; */
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .images-gallery .col-left {
+    height: 100%;
+    margin-right: 2px;
+    width: 400px;
+  }
 }

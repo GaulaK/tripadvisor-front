@@ -19,15 +19,29 @@
   <body>
     <header>
       <div class="container">
-        <img src="./assets/img/Tripadvisor_logo.png" alt="Logo TripAdvisor" />
+        <picture>
+          <source media="(max-width: 768px)" srcset="./Tripadvisor_icon.svg" />
+          <img src="./assets/img/Tripadvisor_logo.png" alt="Logo TripAdvisor" />
+        </picture>
         <nav>
-          <a href="#"><i class="fa-solid fa-pen"></i><span>Avis</span></a>
           <a href="#"
-            ><i class="fa-regular fa-heart"></i><span>Voyages</span></a
+            ><i class="fa-solid fa-pen"></i
+            ><span class="visibleXL">Avis</span></a
           >
-          <a href=""><i class="fa-regular fa-bell"></i><span>Alertes</span></a>
-          <button>Connectez-vous</button>
-          <a href="#"><i class="fa-regular fa-bell"></i><span>Panier</span></a>
+          <a href="#"
+            ><i class="fa-regular fa-heart"></i
+            ><span class="visibleXL">Voyages</span></a
+          >
+          <a href=""
+            ><i class="fa-regular fa-bell"></i
+            ><span class="visibleXL">Alertes</span></a
+          >
+          <button class="visibleS"><i class="fa-solid fa-user"></i></button>
+          <button class="visibleXL">Connectez-vous</button>
+          <a href="#"
+            ><i class="fa-solid fa-basket-shopping"></i
+            ><span class="visibleXL">Panier</span></a
+          >
         </nav>
       </div>
     </header>
