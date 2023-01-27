@@ -59,13 +59,16 @@ header {
   z-index: 1;
 }
 
-/* header::after {
-  content: "";
+.header-border-bottom {
   border-bottom: #34e0a1 solid 1px;
+}
+
+header::after {
+  content: "";
   position: absolute;
   bottom: 0;
   width: 100%;
-} */
+}
 
 header img {
   padding-top: 5px;
@@ -409,6 +412,77 @@ footer .container a {
 
 footer .container a:hover {
   color: #333333;
+}
+
+/* ------------------------------------- */
+/* ---------  MODAL  ------------------- */
+/* ------------------------------------- */
+
+.form-container {
+  margin: 0 auto;
+  width: 25%;
+}
+
+.form-container > div {
+  background-color: white;
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+.modal {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.cross {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal form {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form p {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.form form * {
+  width: 60%;
+  border: 2px solid black;
+  margin: 10px 0;
+  padding: 16px 10px;
+  font-family: "Trip Sans Reg", sans-serif;
+  font-weight: bold;
+}
+
+.form form input[type="submit"] {
+  background-color: #04aa6c;
+  color: white;
+  width: 200px;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+}
+.form form input[type="submit"]:hover {
+  background-color: #34e0a1;
+  cursor: pointer;
 }
 
 /* ------------------------------------- */
